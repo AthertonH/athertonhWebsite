@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 * {
     padding: 0;
     margin: 0;
@@ -6,9 +7,8 @@
 }
 
 :root {
-    --primary-color: rgb(106, 226, 186);
-    --text-color: #ffffff;
-    --glow-color: #b919c2;
+    --primary-color: red;
+    --text-color: #727171;
 }
 
 html {
@@ -74,7 +74,7 @@ img {
     animation: right 40s .5s infinite;
 }
 
-nav{
+nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -84,7 +84,7 @@ nav{
     color: #fff;
 }
 
-.nav-list{
+.nav-list {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -156,6 +156,7 @@ nav{
 }
 
 @keyframes down {
+
     0%,
     100% {
         top: -100px;
@@ -167,6 +168,7 @@ nav{
 }
 
 @keyframes up {
+
     0%,
     100% {
         bottom: -100px;
@@ -178,6 +180,7 @@ nav{
 }
 
 @keyframes left {
+
     0%,
     100% {
         left: -100px;
@@ -200,18 +203,8 @@ nav{
     }
 }
 
-@keyframes glow{
-    from{
-        text-shadow: 0 0 50px var(--glow-color);
-    }
-    to{
-        text-shadow: 0 0 30px var(--glow-color),
-                    0 0 10px var(--glow-color);
-    }
-}
-
 /* common styles */
-a{
+a {
     text-decoration: none;
     color: white;
 }
@@ -228,7 +221,6 @@ a{
     font-style: 700;
     font-size: 2rem;
     text-transform: uppercase;
-    animation: glow 3s ease-in-out infinite alternate;
 }
 
 .item_preTitle {
@@ -257,7 +249,7 @@ a{
     margin: 0 auto;
     display: grid;
     padding: 5rem;
-    background: rgba(0, 0, 0, .1);
+    background: rgba(0, 0, 0, .8);
     grid-template-columns: 1fr 1fr;
     gap: 4rem;
 }
@@ -275,8 +267,8 @@ a{
     grid-column: 1 / -1;
     margin-bottom: 2rem
 }
-.group-0
-{
+
+.group-0 {
     max-width: 700px;
     width: 100%;
     margin: 0 auto;
@@ -286,12 +278,14 @@ a{
     gap: 5rem;
     justify-content: center;
 }
+
 .group-1,
 .group-2 {
     display: flex;
     flex-direction: column;
     gap: 5rem;
 }
+
 .group-3 {
     max-width: 700px;
     width: 100%;
@@ -336,12 +330,11 @@ a{
 }
 
 .profile_name_lastName {
-    color: var(--primary-color);
+    color: rgb(255, 0, 0);
     font-weight: 700;
     font-size: clamp(2.5rem, 15vw, 7rem);
     text-transform: uppercase;
     display: block;
-    animation: glow 3s ease-in-out infinite alternate;
 }
 
 .profile_title {
@@ -406,6 +399,7 @@ a{
     justify-content: flex-start;
     color: var(--text-color);
 }
+
 .portfolio_item {
     margin-top: -1rem;
     font-size: 2rem;
@@ -415,10 +409,12 @@ a{
     justify-content: flex-start;
     color: white;
 }
+
 .portfolio_item:hover,
 .social_item:hover {
     color: var(--primary-color);
 }
+
 .portfolio_item svg,
 .social_item svg {
     width: 2rem;
