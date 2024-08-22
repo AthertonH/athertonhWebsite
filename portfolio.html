@@ -1,11 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Portfolio</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <h1>Portfolio</h1>
-        <p class="p-welcome">Welcome to my projects page</p>
-    </body>
+
+<!-- Icons -->
+<script src="https://unpkg.com/feather-icons@4.10.0/dist/feather.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script>
+    $(document).ready(function () {
+        feather.replace();
+
+        $('button').click(function () {
+            $('.alert').html('<i data-feather="activity"></i>');
+            feather.replace();
+        });
+
+    });
+</script>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="./images/logo.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/ba57058827.js" crossorigin="anonymous"></script>
+    <title>Harrison Atherton</title>
+</head>
+
+<body>
+    <section id="up"></section>
+    <section id="down"></section>
+    <section id="left"></section>
+    <section id="right"></section>
+    <div class="container">
+        <!-- Top side -->
+        <div class="group-0">
+        <div class="group-0">
+            <div class="portfolio_item">
+                <a href="./index.html" class="portfolio_item">
+                    <i data-feather="home"></i>
+                    <span>Home</span>
+                </a>
+            </div>
+            <div class="portfolio_item">
+                <a href="cv.pdf" download class="portfolio_item">
+                    <i data-feather="download"></i>
+                    <span>Resume</span>
+                </a>
+            </div>
+        </div>
+        </div>
+        <!-- Left side -->
+        <div class="group-1">
+            <div class="skills">
+                <h3 class="title">Python (Pandas)</h3>
+                <ul class="skill_list description">
+                    <a href="./weather.html" class="portfolio_item">
+                        <i data-feather="code"></i>
+                        <span>Weather</span>
+                    </a>
+                </ul>
+            </div>
+
+        </div>
+        <!-- Right side -->
+        <div class="group-2">
+
+        </div>
+        <!-- Bottom side -->
+        <hr>
+        <div class="group-3">
+            <div class="contact">
+                <h3 class="title">Contact</h3>
+                <div class="contact_info">
+                    <p class="description">
+                        Las Vegas, Nevada
+                    </p>
+                    <p class="description">
+                        (951) 454-5593
+                    </p>
+                    <p class="description">
+                        athertonharrison@gmail.com
+                    </p>
+                </div>
+            </div>
+            <div class="socials">
+                <h3 class="title">Socials</h3>
+                <div class="social_items">
+                    <a href="https://github.com/athertonh" class="social_item">
+                        <i data-feather="github"></i>
+                        <span>/athertonh</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/athertonh/" class="social_item">
+                        <i data-feather="linkedin"></i>
+                        <span>/athertonh</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<!--
+Special thanks to @webcifar & @mattnewdavid for guiding me through my first HTML/CSS website!
+(If you're reading this please hire me 📊)
+-->
+
 </html>
