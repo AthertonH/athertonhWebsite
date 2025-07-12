@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Icons -->
+  <script src="https://unpkg.com/feather-icons@4.10.0/dist/feather.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <script>
+    $(document).ready(function () {
+      feather.replace();
+
+      $("button").click(function () {
+        $(".alert").html('<i data-feather="activity"></i>');
+        feather.replace();
+      });
+    });
+  </script>
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="./images/logo.ico" type="image/x-icon" />
+    <script
+      src="https://kit.fontawesome.com/ba57058827.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Semaphores</title>
+  </head>
+
+  <body>
+    <section id="up"></section>
+    <section id="down"></section>
+    <section id="left"></section>
+    <section id="right"></section>
+    <div class="container">
+      <!-- Top side -->
+      <div class="group-0">
+        <div class="portfolio_item">
+          <a href="./" class="portfolio_item">
+            <i data-feather="home"></i>
+            <span>Home</span>
+          </a>
+        </div>
+        <div class="portfolio_item">
+          <a href="./portfolio" class="portfolio_item">
+            <i data-feather="bar-chart-2"></i>
+            <span>Portfolio</span>
+          </a>
+        </div>
+        <div class="portfolio_item">
+          <a href="cv.pdf" download class="portfolio_item">
+            <i data-feather="download"></i>
+            <span>Resume</span>
+          </a>
+        </div>
+      </div>
+      <!-- Header -->
+      <div class="profile">
+        <div class="profile_container">
+          <div>
+            <p class="profile_title">
+              Semaphores: Traffic Light Simulation Program
+            </p>
+            <p class="description">
+              This program simulates a traffic intersection where multiple roads
+              converge, modeled to mimic real-world traffic light behavior. The
+              simulation utilizes threads to represent vehicles and semaphores
+              to control the traffic lights, ensuring safe and smooth traffic
+              flow without collisions or deadlocks. <br /><br />
+
+              The program accepts command-line arguments to specify the number
+              of threads, the limit of the range, and the computational mode.
+              The arguments are provided in the following format: <br /><br />
+
+              Each road is equipped with a traffic light, controlled by a
+              semaphore. The light cycles through: <br />
+              <span style="color: green"><strong>Green:</strong></span> Vehicles
+              proceed. <br />
+              <span style="color: yellow"><strong>Yellow:</strong></span>
+              Transitional phase where new vehicles are blocked, but current
+              vehicles finish crossing. <br />
+              <span style="color: red"><strong>Red:</strong></span> Vehicles are
+              stopped. <br /><br />
+
+              Each vehicle is represented by a thread. Threads simulate the
+              behavior of vehicles: <br />
+              Arriving at the intersection. <br />
+              Waiting for their traffic light to turn green (semaphore
+              acquired). <br />
+              Crossing the intersection when allowed. <br /><br />
+
+              Vehicles approach the intersection at random intervals,
+              implemented using sleep functions with randomized durations.
+              <br /><br />
+
+              Semaphores ensure no conflicting traffic directions (e.g.,
+              north-south and east-west) have green lights simultaneously. When
+              one road’s semaphore is released (green light), the others are
+              blocked (red light). <br /><br />
+
+              The program uses a timer to simulate realistic traffic light
+              durations: <br />
+              <span style="color: green"><strong>Green:</strong></span> 30
+              seconds. <br />
+              <span style="color: yellow"><strong>Yellow:</strong></span> 5
+              seconds. <br />
+              <span style="color: red"><strong>Red:</strong></span>
+              Corresponding to the other lights' green/yellow duration.
+            </p>
+            <!-- GIF -->
+            <img
+              src="./images/semaphoresGif.gif"
+              alt="Description of the GIF"
+              class="gif"
+              loading="lazy"
+              style="max-width: 80%"
+            />
+            <a
+              href="https://github.com/AthertonH/semaphores"
+              target="_blank"
+              rel="noopener noreferrer"
+              style="display: block; text-align: center; font-size: 1.6rem"
+            >
+              <i data-feather="github"></i>
+              Link to project
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- Bottom side -->
+      <hr />
+      <div class="group-3">
+        <div class="contact">
+          <h3 class="title">Contact</h3>
+          <div class="contact_info">
+            <p class="description">Las Vegas, Nevada</p>
+            <p class="description">(951) 454-5593</p>
+            <p class="description">athertonharrison@gmail.com</p>
+          </div>
+        </div>
+        <div class="socials">
+          <h3 class="title">Socials</h3>
+          <div class="social_items">
+            <a href="https://github.com/athertonh" class="social_item">
+              <i data-feather="github"></i>
+              <span>/athertonh</span>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/athertonh/"
+              class="social_item"
+            >
+              <i data-feather="linkedin"></i>
+              <span>/athertonh</span>
+            </a>
+            <a href="https://leetcode.com/u/athertonh/" class="social_item">
+              <i data-feather="code"></i>
+              <span>/athertonh</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

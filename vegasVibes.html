@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Icons -->
+  <script src="https://unpkg.com/feather-icons@4.10.0/dist/feather.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <script>
+    $(document).ready(function () {
+      feather.replace();
+
+      $("button").click(function () {
+        $(".alert").html('<i data-feather="activity"></i>');
+        feather.replace();
+      });
+    });
+  </script>
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="./images/logo.ico" type="image/x-icon" />
+    <script
+      src="https://kit.fontawesome.com/ba57058827.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Vegas Vibes</title>
+  </head>
+
+  <body>
+    <section id="up"></section>
+    <section id="down"></section>
+    <section id="left"></section>
+    <section id="right"></section>
+    <div class="container">
+      <!-- Top side -->
+      <div class="group-0">
+        <div class="portfolio_item">
+          <a href="./" class="portfolio_item">
+            <i data-feather="home"></i>
+            <span>Home</span>
+          </a>
+        </div>
+        <div class="portfolio_item">
+          <a href="./portfolio" class="portfolio_item">
+            <i data-feather="bar-chart-2"></i>
+            <span>Portfolio</span>
+          </a>
+        </div>
+        <div class="portfolio_item">
+          <a href="cv.pdf" download class="portfolio_item">
+            <i data-feather="download"></i>
+            <span>Resume</span>
+          </a>
+        </div>
+      </div>
+      <!-- Header -->
+      <div class="profile">
+        <div class="profile_container">
+          <div>
+            <p class="profile_title">Vegas Vibes: A Blackjack Discord Bot</p>
+            <p class="description">
+              This Discord Bot was set to me as an exercise to practice my C#
+              abilities. It contains fully interactive blackjack with hit and
+              stand mechanics, dealer logic for automatic gameplay based on
+              standard strategy, and displays card images for both the player
+              and the dealer. There is a virtual balance for users.
+              <br /><br />
+              This bot is still under development.
+            </p>
+            <!-- GIF -->
+            <img
+              src="./images/vegasVibesGif.gif"
+              alt="Description of the GIF"
+              class="gif"
+              loading="lazy"
+              style="width: 400px; height: auto"
+            />
+            <a
+              href="https://github.com/AthertonH/vegasVibes"
+              target="_blank"
+              rel="noopener noreferrer"
+              style="display: block; text-align: center; font-size: 1.6rem"
+            >
+              <i data-feather="github"></i>
+              Link to project
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- Bottom side -->
+      <hr />
+      <div class="group-3">
+        <div class="contact">
+          <h3 class="title">Contact</h3>
+          <div class="contact_info">
+            <p class="description">Las Vegas, Nevada</p>
+            <p class="description">(951) 454-5593</p>
+            <p class="description">athertonharrison@gmail.com</p>
+          </div>
+        </div>
+        <div class="socials">
+          <h3 class="title">Socials</h3>
+          <div class="social_items">
+            <a href="https://github.com/athertonh" class="social_item">
+              <i data-feather="github"></i>
+              <span>/athertonh</span>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/athertonh/"
+              class="social_item"
+            >
+              <i data-feather="linkedin"></i>
+              <span>/athertonh</span>
+            </a>
+            <a href="https://leetcode.com/u/athertonh/" class="social_item">
+              <i data-feather="code"></i>
+              <span>/athertonh</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

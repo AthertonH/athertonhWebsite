@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Icons -->
+  <script src="https://unpkg.com/feather-icons@4.10.0/dist/feather.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <script>
+    $(document).ready(function () {
+      feather.replace();
+
+      $("button").click(function () {
+        $(".alert").html('<i data-feather="activity"></i>');
+        feather.replace();
+      });
+    });
+  </script>
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="./images/logo.ico" type="image/x-icon" />
+    <script
+      src="https://kit.fontawesome.com/ba57058827.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Lexical Analysis</title>
+  </head>
+
+  <body>
+    <section id="up"></section>
+    <section id="down"></section>
+    <section id="left"></section>
+    <section id="right"></section>
+    <div class="container">
+      <!-- Top side -->
+      <div class="group-0">
+        <div class="portfolio_item">
+          <a href="./" class="portfolio_item">
+            <i data-feather="home"></i>
+            <span>Home</span>
+          </a>
+        </div>
+        <div class="portfolio_item">
+          <a href="./portfolio" class="portfolio_item">
+            <i data-feather="bar-chart-2"></i>
+            <span>Portfolio</span>
+          </a>
+        </div>
+        <div class="portfolio_item">
+          <a href="cv.pdf" download class="portfolio_item">
+            <i data-feather="download"></i>
+            <span>Resume</span>
+          </a>
+        </div>
+      </div>
+      <!-- Header -->
+      <div class="profile">
+        <div class="profile_container">
+          <div>
+            <p class="profile_title">
+              IngrediScan: Android Nutrition Tracker App
+            </p>
+            <p class="description">
+                IngrediScan is a collaborative mobile application designed to help users make healthier food 
+                choices by instantly displaying detailed nutritional information from scanned barcodes. 
+                Built using Kotlin and Jetpack Compose, the app retrieves real-time data including calories,
+                macronutrients, and additives from the USDA FoodData Central API and presents it in a clean, 
+                user-friendly interface. Rather than decoding complex ingredient labels or manually entering 
+                meals, users can quickly assess their food choices in seconds. <br /><br />
+  
+                The project was developed by me and a team of 9 other students. 
+                Working together in a structured environment, we applied real-world software engineering 
+                practices to bring the application to life. I contributed to both front-end development and 
+                back-end integration, ensuring the app was responsive, intuitive, and functionally robust.
+                <br /><br />
+  
+                Through this experience, I gained hands-on skills in team collaboration, version control with Git and 
+                GitHub, and issue tracking using pull requests and branch-based workflows. We communicated regularly 
+                through stand-ups, coordinated features across roles, and practiced resolving merge conflicts 
+                and debugging shared code in a multi-developer environment. <br /><br />
+  
+                Firebase was used to handle user authentication and secure data storage, while Jetpack Compose 
+                streamlined UI development for a modern Android experience. The result is a fast, reliable, and 
+                FDA-aligned nutrition tracking app that’s built with real users in mind. <br /><br />
+
+                Contributors: Onasis Arrechavala, Harrison Atherton, Austin Kim, Stella Kim, Joel Mendoza, William Rosales, 
+                Alan Reisenauer, Riley Ramos, Jaison-Noah Sarte, Minting Xu
+            <!-- GIF -->
+            <video class="gif" style="max-width: 60%" controls autoplay muted loop>
+                <source src="./images/ingrediScanDemo.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            <a
+              href="https://github.com/AthertonH/2025-S-GROUP5-ISIT"
+              target="_blank"
+              rel="noopener noreferrer"
+              style="display: block; text-align: center; font-size: 1.6rem"
+            >
+              <i data-feather="github"></i>
+              Link to project
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- Bottom side -->
+      <hr />
+      <div class="group-3">
+        <div class="contact">
+          <h3 class="title">Contact</h3>
+          <div class="contact_info">
+            <p class="description">Las Vegas, Nevada</p>
+            <p class="description">(951) 454-5593</p>
+            <p class="description">athertonharrison@gmail.com</p>
+          </div>
+        </div>
+        <div class="socials">
+          <h3 class="title">Socials</h3>
+          <div class="social_items">
+            <a href="https://github.com/athertonh" class="social_item">
+              <i data-feather="github"></i>
+              <span>/athertonh</span>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/athertonh/"
+              class="social_item"
+            >
+              <i data-feather="linkedin"></i>
+              <span>/athertonh</span>
+            </a>
+            <a href="https://leetcode.com/u/athertonh/" class="social_item">
+              <i data-feather="code"></i>
+              <span>/athertonh</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
